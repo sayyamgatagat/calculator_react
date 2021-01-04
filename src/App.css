@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+body {
+  background-color: #55d8d1;
+}
+.App {
+  text-align: center;
+}
+
+.main {
+  text-align: center;
+}
+
+.container {
+  height: 580px;
+  text-align: center;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  box-shadow: 4px 4px 10px black;
+  background-color: black;
+}
+
+button {
+  width: 75px;
+  height: 75px;
+  font-size: 1.8rem;
+  font-family: "Audiowide", cursive;
+  font-weight: 400;
+  margin: 4px;
+  border-radius: 20%;
+  background-color: rgb(20, 19, 19);
+  box-shadow: 1px 1px 5px rgb(37, 37, 37);
+
+  border: none;
+  outline: none;
+  color: whitesmoke;
+}
+.txt {
+  width: 300px;
+  color: white;
+  background-color: black;
+  height: 50px;
+  font-size: 2rem;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  text-align: right;
+}
+
+.eq {
+  font-size: 40px;
+  color: #52c9dc;
+  font-weight: 600;
+  text-align: left;
+}
+
+.result {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: right;
+  width: 100%;
+  margin-right: 6%;
+}
+
+.res {
+  display: flex;
+  height: 100px;
+  padding-left: 3%;
+  align-content: flex-start;
+  justify-content: stretch;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.spl {
+  background-color: #52c9dc;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 3.5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #52c9dc;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #55d8d1;
+}
