@@ -6,8 +6,6 @@ function App() {
     const [result, setResult] = useState("");
     const [display, setDisplay] = useState("");
 
-    const {calc} = eval();
-
     function kbdInput(e){
         console.log(e);
     }
@@ -115,7 +113,7 @@ function App() {
                     id="+/-"
                     onClick={() => {
                         try {
-                            var temp = -calc(status);
+                            var temp = -eval(status);
                             setResult(temp);
                             setStatus(temp);
                             setDisplay("");
@@ -271,7 +269,7 @@ function App() {
                 <button
                     onClick={() => {
                         try {
-                            var res = calc(status);
+                            var res = eval(status);
                             setResult(res);
                             setStatus(res);
                             setDisplay("");
