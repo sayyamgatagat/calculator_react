@@ -8,43 +8,57 @@ function App() {
 
 
   function statusHandler(e) {
-    if(e === "+" || e === "-" || e === "*" || e === "/" || e === "." || e === "**"){
-      var n = status.length -1
-      if(status.slice(-2) === "**"){
-        setStatus(status.slice(0,n-1) + e);
-        console.log(status);
-      }
-      else if(status[n] === "+" || status[n] === "-" || status[n] === "/" || status[n] === "*" || status[n] === "."){
-        setStatus(status.slice(0,n) + e);
-        console.log(status);
+    try{
+      if(e === "+" || e === "-" || e === "*" || e === "/" || e === "." || e === "**" || e === "%"){
+        var n = status.length -1
+        if(status.slice(-2) === "**"){
+          setStatus(status.slice(0,n-1) + e);
+          console.log(status);
+        }
+        else if(status[n] === "+" || status[n] === "-" || status[n] === "/" || status[n] === "*" || status[n] === "." || status[n] === "%"){
+          setStatus(status.slice(0,n) + e);
+          console.log(status);
+        }
+        else{
+          setStatus(status + e);
+          console.log(status);
+        }
       }
       else{
         setStatus(status + e);
         console.log(status);
       }
     }
-    else{
-      setStatus(status + e);
-      console.log(status);
+    catch{
+        setStatus(status + e);
+        console.log(status);
     }
+    
   
   }
   function displayHandler(e) {
-    if(e === "+" || e === "-" || e === "x" || e === "/" || e === "." || e === "^"){
-      var n = display.length -1
-      if(display[n] === "+" || display[n] === "-" || display[n] === "/" || display[n] === "x" || display[n] === "." || display[n] === "^"){
-        setDisplay(display.slice(0,n) + e);
-        console.log(display);
+    try{
+      if(e === "+" || e === "-" || e === "x" || e === "/" || e === "." || e === "^" || e === "%"){
+        var n = display.length -1
+        if(display[n] === "+" || display[n] === "-" || display[n] === "/" || display[n] === "x" || display[n] === "." || display[n] === "^" || display[n] === "%"){
+          setDisplay(display.slice(0,n) + e);
+          console.log(display);
+        }
+        else{
+          setDisplay(display + e);
+          console.log(display);
+        }
       }
       else{
         setDisplay(display + e);
         console.log(display);
       }
     }
-    else{
-      setDisplay(display + e);
-      console.log(display);
+    catch{
+        setDisplay(display + e);
+        console.log(display);
     }
+    
   }
 
   return (
