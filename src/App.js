@@ -17,7 +17,6 @@ function App() {
                 e === "-" ||
                 e === "*" ||
                 e === "/" ||
-                e === "." ||
                 e === "**" ||
                 e === "%"
             ) {
@@ -30,7 +29,6 @@ function App() {
                     status[n] === "-" ||
                     status[n] === "/" ||
                     status[n] === "*" ||
-                    status[n] === "." ||
                     status[n] === "%"
                 ) {
                     setStatus(status.slice(0, n) + e);
@@ -58,7 +56,6 @@ function App() {
                 e === "-" ||
                 e === "x" ||
                 e === "/" ||
-                e === "." ||
                 e === "^" ||
                 e === "%"
             ) {
@@ -68,7 +65,6 @@ function App() {
                     display[n] === "-" ||
                     display[n] === "/" ||
                     display[n] === "x" ||
-                    display[n] === "." ||
                     display[n] === "^" ||
                     display[n] === "%"
                 ) {
