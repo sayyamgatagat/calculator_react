@@ -87,7 +87,6 @@ function App() {
 
     return (
         <div className="main">
-            <h1>Calculator</h1>
             <div className="container">
                 <div className="res">
                     <p className="eq">=</p>
