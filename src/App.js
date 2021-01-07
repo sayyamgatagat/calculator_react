@@ -122,7 +122,8 @@ function App() {
                 <button
                     onClick={() => {
                         statusHandler("%");
-                        displayHandler("%");
+                        setResult("");
+                        displayHandler(result.toString() + "%");
                     }}
                     className="btn% spl"
                     id="%">
